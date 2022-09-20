@@ -36,9 +36,9 @@ public class ObjectsGeneration {
 
         List<Subject> subjects = new ArrayList<>();
         Subject subject1 = new Subject(1, "Mathematics", 1, 5, teacher1);
-        Subject subject2 = new Subject(2, "Informatics", 1, 3, teacher2);
-        Subject subject3 = new Subject(3, "Programming", 1, 4, teacher5);
-        Subject subject4 = new Subject(4, "Algorithms", 1, 2, teacher4);
+        Subject subject2 = new Subject(2, "Informatics", 1, 4, teacher2);
+        Subject subject3 = new Subject(3, "Programming", 1, 5, teacher5);
+        Subject subject4 = new Subject(4, "Algorithms", 1, 3, teacher4);
         Subject subject5 = new Subject(5, "Philosophy", 1, 2, teacher3);
 
         subjects.add(subject1);
@@ -48,6 +48,17 @@ public class ObjectsGeneration {
         subjects.add(subject5);
 
         return subjects;
+    }
+
+    public List<String> getSubjectTime() {
+        List<String> times = new ArrayList<>();
+        times.add("8:00");
+        times.add("9:30");
+        times.add("11:00");
+        times.add("12:30");
+        times.add("14:00");
+
+        return times;
     }
 
 }
