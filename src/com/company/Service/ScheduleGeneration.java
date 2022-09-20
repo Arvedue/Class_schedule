@@ -17,31 +17,6 @@ public class ScheduleGeneration {
 
         int hoursPerWeek = 0;
 
-//        for (Weekday weekday : weekdays) {
-//            for (String time : subjectTime) {
-//                if(!usedTime.contains(time)) {
-//                    for (Classroom classroom : classrooms) {
-//                        if(!usedClassroom.contains(classroom)) {
-//                            for (Subject subject : subjects) {
-//                                if (!usedSubjects.contains(subject)) {
-//                                    if (subject.getHoursPerWeek() >= 1){
-//                                        Schedule schedule = new Schedule(weekday, time, classroom, subject);
-//                                        schedules.add(schedule);
-//                                        usedSubjects.add(subject);
-//
-//                                        hoursPerWeek = subject.getHoursPerWeek() - 1;
-//                                        subject.setHoursPerWeek(hoursPerWeek);
-//                                    }
-//                                }
-//                            }
-//                            usedClassroom.add(classroom);
-//                        }
-//                    }
-//                    usedTime.add(time);
-//                }
-//            }
-//        }
-
         for (Weekday weekday : weekdays) {
             List<Subject> usedSubjects = new ArrayList<>();
             List<Classroom> usedClassroom = new ArrayList<>();

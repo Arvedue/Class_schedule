@@ -8,7 +8,7 @@ public class Main {
 	// write your code here
 
         OutputService outputService = new OutputService();
-//        outputService.printAllObjects();
+        outputService.printAllObjects();
         outputService.printSchedule();
 
     }

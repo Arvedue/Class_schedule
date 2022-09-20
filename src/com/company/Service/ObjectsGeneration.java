@@ -31,7 +31,7 @@ public class ObjectsGeneration {
         Teacher teacher1 = new Teacher(1, "Bekzhan", "Chandaev");
         Teacher teacher2 = new Teacher(2, "Adis", "Kerimov");
         Teacher teacher3 = new Teacher(3, "Aigerim", "Budaichieva");
-        Teacher teacher4 = new Teacher(4, "Alaket", "Kubatbekov");
+        Teacher teacher4 = new Teacher(4, "Alaken", "Kubatbekov");
         Teacher teacher5 = new Teacher(5, "Kubanychbek", "Kushtarbekov");
 
         List<Subject> subjects = new ArrayList<>();

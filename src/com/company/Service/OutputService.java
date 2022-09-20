@@ -43,7 +43,7 @@ public class OutputService {
 
             for (Schedule schedule : schedules) {
                 if(weekday.equals(schedule.getWeekday())) {
-                    System.out.println(schedule.getTime() + "\t Room number: " +
+                    System.out.println(schedule.getTime() + "\t Classroom: " +
                             schedule.getClassroom().getId());
                     System.out.println(schedule.getSubject().getName() + " / " +
                             schedule.getSubject().getTeacher().getName() + " " +

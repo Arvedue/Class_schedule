@@ -1,7 +1,5 @@
 package com.company.Models;
 
-import java.sql.Time;
-
 public class Schedule {
     private Weekday weekday;
     private String time;
