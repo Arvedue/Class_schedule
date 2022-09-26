@@ -6,6 +6,7 @@ import com.company.Models.Subject;
 import com.company.Models.Weekday;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ScheduleGeneration {
@@ -20,6 +21,9 @@ public class ScheduleGeneration {
             List<Subject> usedSubjects = new ArrayList<>();
             List<Classroom> usedClassroom = new ArrayList<>();
             List<String> usedTime = new ArrayList<>();
+
+            Collections.shuffle(classrooms);
+            Collections.shuffle(subjects);
 
             for (String time : times) {
                 if (!usedTime.contains(time)) {
