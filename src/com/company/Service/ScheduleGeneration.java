@@ -12,7 +12,6 @@ public class ScheduleGeneration {
 
     public List<Schedule> generateSchedule(List<Classroom> classrooms, List<Subject> subjects, List<String> times) {
         Weekday[] weekdays = Weekday.values();
-        List<String> subjectTime = times;
         List<Schedule> schedules = new ArrayList<>();
 
         int hoursPerWeek = 0;

@@ -35,7 +35,7 @@ public class ObjectsGeneration {
         Teacher teacher5 = new Teacher(5, "Kubanychbek", "Kushtarbekov");
 
         List<Subject> subjects = new ArrayList<>();
-        Subject subject1 = new Subject(1, "Mathematics", 1, 5, teacher1);
+        Subject subject1 = new Subject(1, "Mathematics", 1, 4, teacher1);
         Subject subject2 = new Subject(2, "Informatics", 1, 4, teacher2);
         Subject subject3 = new Subject(3, "Programming", 1, 5, teacher5);
         Subject subject4 = new Subject(4, "Algorithms", 1, 3, teacher4);
