@@ -1,4 +1,4 @@
-package com.company.Service;
+package com.company.Service.impl;
 
 import com.company.Models.Classroom;
 import com.company.Models.Schedule;
@@ -9,12 +9,7 @@ import java.util.List;
 
 public class OutputService {
 
-    ObjectsGeneration objectsGeneration = new ObjectsGeneration();
-    List<Classroom> classrooms = objectsGeneration.getClassrooms();
-    List<Subject> subjects = objectsGeneration.getSubjects();
-    List<String> times = objectsGeneration.getSubjectTime();
-
-    public void printAllObjects() {
+    public void printAllObjects(List<Classroom> classrooms, List<Subject> subjects, List<String> times) {
         System.out.println("\n=====Classrooms=====");
         for(Classroom classroom : classrooms) {
             System.out.println("Classroom number: " + classroom.getId());
@@ -29,7 +24,7 @@ public class OutputService {
         }
     }
 
-    public void printSchedule() {
+    public void printSchedule(List<Classroom> classrooms, List<Subject> subjects, List<String> times) {
         ScheduleGeneration scheduleGeneration = new ScheduleGeneration();
         List<Schedule> schedules = scheduleGeneration.generateSchedule(classrooms, subjects, times);
         Weekday[] weekdays = Weekday.values();
@@ -52,6 +47,5 @@ public class OutputService {
 
             }
         }
-
     }
 }

@@ -1,4 +1,4 @@
-package com.company.Service;
+package com.company.Service.impl;
 
 import com.company.Models.Classroom;
 import com.company.Models.Schedule;
